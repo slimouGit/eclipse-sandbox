@@ -12,6 +12,11 @@ public class Login {
 	public Login() {
 		super();
 	}
+	
+	public String redirect(){
+		return "employee/index.xhtml";
+	}
+	
 	public String getEmail() {
 		return email;
 	}

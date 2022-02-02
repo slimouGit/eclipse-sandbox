@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Add novel</title>
+</head>
+<body>
+	<h:form>
+		Name: <h:inputText id="name" value="#{novelBean.name}" /> <br/>
+		Author: <h:inputText id="author" value="#{novelBean.author}" /> <br/>
+		Editor: <h:inputText id="editor" value="#{novelBean.editor}" /> <br/>
+		Edition: <h:inputText id="edition" value="#{novelBean.edition}" /> <br/>
+		Price: <h:inputText id="price" value="#{novelBean.price}" /> <br/>
+		Genre: <h:selectManyCheckbox id="genre" value="#{novelBean.genre}"> <br/>
+		<f:selectItem itemLabel="Comedy" itemValue="comedy"/>
+		<f:selectItem itemLabel="Drama" itemValue="drama"/>
+		<f:selectItem itemLabel="Romance" itemValue="romance"/>
+		<f:selectItem itemLabel="Adventure" itemValue="adventure"/>
+		<f:selectItem itemLabel="Thriller" itemValue="thriller"/>
+		</h:selectManyCheckbox>
+		Description: <h:inputTextarea id="description" value="#{novelBean.description}" /> <br/>
+		Release Date: <h:inputText id="releaseDate" value="#{novelBean.releaseDate}" /> <br/>
+		
+		Origin: <h:selectOneMenu id="origin" value="novelBean.selectedOrigin" >
+			<f:selectItem itemLabel="India" itemValue="india"/>
+			<f:selectItem itemLabel="OutOfIndia" itemValue="outOfIndia"/>
+		</h:selectOneMenu> <br/>
+		
+		sale Out Of India: <h:selectOneRadio id="saleOutOfIndia" value="#{novelBean.saleOutOfIndia}">
+			<f:selectItem itemLabel="no" itemValue="no"/>
+			<f:selectItem itemLabel="yes" itemValue="yes"/>
+		</h:selectOneRadio>		
+		<h:commandButton id="submit" action="confirmNovel" value="Add" />
+	</h:form>
+	
+</body>
+</html>

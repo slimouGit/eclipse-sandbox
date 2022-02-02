@@ -16,6 +16,13 @@
 		<label for="passowrd">Password</label>
 		<h:inputSecret id="password"  value="#{login.password}"/>
 		<h:commandButton action="message" value="Submit" />
+		<div>
+		<h:commandButton action="addNovel" value="Add Novel" />
+		</div>
+		<div>
+		<h:commandButton action="#{login.redirect()}" value="Add Employee" />
+		<h:commandButton action="#{login.redirect()}" value="New Employee"/>
+		</div>
 	</h:form>
 </body>
 </html>
