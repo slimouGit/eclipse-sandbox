@@ -10,11 +10,13 @@
 <title>DummyJSF</title>
 </h:head>
 <h:body>
-	<h1>DummyJSF</h1>
-	<h:form>
-		<p:commandButton value="Hallo Dummy Bean" action="#{dummyBean.helloBean()}" update="form from:helloUser" ajax="false"/>
+
+	<h:form> 
+    <p:panel header="DummyJSF-Project" footer="JSF MVN CDI">
+        <p:commandButton value="Hello Dummy Service" action="#{dummyBean.helloBean()}" update="form from:helloUser" ajax="false"/>
 		<p:outputLabel id="helloUser" rendered="#{!empty dummyBean.helloUser}" value="#{dummyBean.helloUser}"/>
-	</h:form>
+    </p:panel>
+    </h:form>
 	
 </h:body>
 </html>
