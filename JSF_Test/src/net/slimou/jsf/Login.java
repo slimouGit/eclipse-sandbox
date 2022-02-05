@@ -1,10 +1,15 @@
 package net.slimou.jsf;
 
+
+
 import javax.faces.bean.ManagedBean;
+
+
 
 @ManagedBean
 public class Login {
 	
+
 	private String email;
 	private String password;	
 	private String welcome = "You are logged in";
@@ -24,7 +29,7 @@ public class Login {
 		this.email = email;
 	}
 	public String getPassword() {
-		return "password is hidden";
+		return password;
 	}
 	public void setPassword(String password) {
 		this.password = password;

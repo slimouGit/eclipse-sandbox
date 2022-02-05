@@ -1,10 +1,15 @@
 package net.slimou.jsf;
 
+
+
 import javax.faces.bean.ManagedBean;
+
 
 @ManagedBean
 public class Employee {
-   private String name;
+   
+	
+	private String name;
    private int age;
    private String gender;
    private String status;

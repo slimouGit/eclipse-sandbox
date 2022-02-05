@@ -1,11 +1,12 @@
 package net.slimou.jsf;
 
-import java.util.Arrays;
 
 import javax.faces.bean.ManagedBean;
 
+
 @ManagedBean
 public class NovelBean {
+
 	private String name;
 	private String author;
 	private String editor;
