@@ -13,7 +13,7 @@
 
 	<h:form> 
     <p:panel header="DummyJSF-Project" footer="JSF MVN CDI">
-        <p:commandButton value="Hello Dummy Service" action="#{dummyBean.helloBean()}" update="form from:helloUser" ajax="false"/>
+        <p:commandButton value="Hello Dummy Service" action="#{dummyBean.helloBean}" update="form from:helloUser" ajax="false"/>
 		<p:outputLabel id="helloUser" rendered="#{!empty dummyBean.helloUser}" value="#{dummyBean.helloUser}"/>
     </p:panel>
     </h:form>
