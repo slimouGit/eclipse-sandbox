@@ -2,12 +2,12 @@ package net.slimou.dummies;
 
 import java.io.Serializable;
 
-import javax.faces.view.ViewScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
 @Named
-@ViewScoped
+@RequestScoped
 public class DummyBean implements Serializable {
 	
 	private static final long serialVersionUID = 627399236624006517L;
